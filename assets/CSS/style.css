@@ -42,11 +42,47 @@ header nav{
     background-color: black;
 }
 
+button.menu-oculto{
+    border: none;
+    font-size: 2rem;
+    padding: 8px;
+    background-color: inherit;
+    color: #011c26;
+}
 
+div.menu-oculto{
+    background-color: #210d26;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    width: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
 
+div.menu-oculto a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    color: #d9d9d9;
+}
 
-
-
+div.menu-oculto button.fechar{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 2rem;
+    background-color: #210d26;
+    color: #d9d9d9;
+    border: none;
+    transition: 0.3s;
+    padding: none;
+}
 
 
 

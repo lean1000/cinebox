@@ -27,4 +27,4 @@ function voltarSlide(){
 
 setInterval(() => {
     proximoSlide()
-}, 3000)
+}, 7000)
