@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinebox</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
-    <link rel="stylesheet" href="./assets/CSS/carrossel.css">
-    <link rel="stylesheet" href="./assets/CSS/filmes.css">
-</head>
-
-<?php include './includes/header.php'  ?>
+<?php
+$titilo = 'Cinebox - Inicio';
+include './includes/header.php'  ?>
 
 <section id="banner">
     <main class="carrossel-conteiner">
@@ -35,9 +23,40 @@
         </button>
     </main>
 </section>
+<section id="filmes-recomendados">
+    <h2 class="titulo">filmes</h2>
+    <main class="container">
+        <div class="row">
 
-<?php include './includes/listarfilmes.php' ?>
 
+            <?php
+            for ($i = 0; $i < 8; $i++) {
+            ?>
+            <div class="col col-3">
+                <figure>
+                    <img src="./assets/IMG/poster/avatar-o-caminho-da-agua.png" alt="posto avatar-o-caminho-da-agua"
+                        class="foto-produto">
+                    <figcaption>
+                        <h4>Avatar o Caminho da Àgua</h4>
+                        <span class="preco">R$ 15,90</span>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt quaerat nihil,
+                            magni eos ipsam est laboriosam ducimus rerum earum? Tempora ipsum rem pariatur eos
+                            quidem voluptatem,
+                            ducimus officia cum ea.
+                        </p>
+                    </figcaption>
+                    <span class="genero">
+                        <label style="background-color: #070373; color: white;">Fantasia</label>
+                        <label style="background-color: #580259; color: white;">Drama</label>
+                        <label style="background-color: #D966Ba; color: white;">Musica</label>
+                    </span>
+                </figure>
+            </div>
+           <?php } ?> }
+        </div>
+    </main>
+</section>
 <?php include './includes/footer.php' ?>
 
 </html>
