@@ -1,4 +1,4 @@
-.carrossel-conteiner{
+.carrossel-conteiner {
     max-width: 1920;
     border: 2px solid #ccc;
     border-radius: 10px;
@@ -6,22 +6,22 @@
     position: relative;
 }
 
-#banner{
+#banner {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#banner img{
+#banner img {
     width: 100%;
 }
 
-.carrosel{
+.carrosel {
     display: flex;
     transition: transform 1s ease-in-out;
 }
 
-.carrossel-conteiner>button{
+.carrossel-conteiner>button {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
@@ -31,10 +31,10 @@
     top: 50%;
 }
 
-.carrossel-conteiner>button.anterior{
+.carrossel-conteiner>button.anterior {
     left: 10px;
 }
 
-.carrossel-conteiner>button.proximo{
+.carrossel-conteiner>button.proximo {
     right: 10px;
 }

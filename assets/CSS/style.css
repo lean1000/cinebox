@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
@@ -9,40 +9,43 @@
     font-weight: 600;
 }
 
-header nav{
+header nav {
     padding: 30px 0;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     background-color: #f2f2f2;
 }
 
-.logo{
+.logo {
     color: black;
     text-decoration: none;
     font-weight: bold;
 }
 
-.menu,.menu-icones{
+.menu,
+.menu-icones {
     list-style: none;
     display: flex;
     gap: 10px;
-    
+
 }
 
-.menu li a,.menu-icones li a{
+.menu li a,
+.menu-icones li a {
     color: black;
     text-decoration: none;
     padding: 8px;
     border-radius: 8px;
 }
 
-.menu li a:hover,.menu-icones li a:hover{
+.menu li a:hover,
+.menu-icones li a:hover {
     color: white;
     background-color: black;
 }
 
-button.menu-oculto{
+button.menu-oculto {
     border: none;
     font-size: 2rem;
     padding: 8px;
@@ -50,7 +53,7 @@ button.menu-oculto{
     color: #011c26;
 }
 
-div.menu-oculto{
+div.menu-oculto {
     background-color: #210d26;
     position: fixed;
     top: 0;
@@ -63,7 +66,7 @@ div.menu-oculto{
     transition: 0.5s;
 }
 
-div.menu-oculto a{
+div.menu-oculto a {
     text-decoration: none;
     font-size: 1.2rem;
     display: block;
@@ -72,7 +75,7 @@ div.menu-oculto a{
     color: #d9d9d9;
 }
 
-div.menu-oculto button.fechar{
+div.menu-oculto button.fechar {
     position: absolute;
     top: 0;
     right: 20px;
@@ -84,6 +87,35 @@ div.menu-oculto button.fechar{
     padding: none;
 }
 
+.footer {
+    background-color: #210D26;
+    color: #F2F2F2;
+    padding: 15px 0;
+}
 
+.footer a {
+    color: #F2F2F2;
+    text-decoration: none;
+}
 
+.footer a:hover {
+    text-decoration: underline;
+}
 
+.social-icons a {
+    color: #F2F2F2;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #F2F2F2;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #F2F2F2;
+    margin-top: 20px;
+}
