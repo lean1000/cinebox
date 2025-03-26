@@ -1,12 +1,23 @@
-<?php 
+<?php
 
-class Filmes {
-    function LFBanco (){
+class Filmes
+{
+    public function exibirlistaFilmes($limite = '')
+    {
 
-        // codigos...
-        // codigos...
-        // codigos...]
+        $dsn = 'mysql:dbname=db_cinebox;host=127.0.0.1';
+        $user = 'root';
+        $password = '';
+        $auxScript = '';
 
-        return 'Pode pedir 6';
+        $banco = new PDO($dsn, $user, $password);
+
+        if (!empty($limite)){
+            $auxScript = "  ORDER BY RAND() LIMIT {$limite}";
+        }
+
+        $script = 'SELECT * FROM tb_filmes'. $auxScript;
+
+        return $banco->query($script)->fetchALL();
     }
 }
