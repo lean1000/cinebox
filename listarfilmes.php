@@ -2,10 +2,14 @@
 
 $titulo = "";
 include './includes/header.php';
-include './includes/filmes_lista.php';
+require './classes/Filmes.php';
+require './classes/Generos.php';
 
-$filme = new Filmes();
-$dadosFilmes = $filme->exibirlistaFilmes();
+$filmes = new Filmes();
+$dadosFilmes = $filmes->exibirListaFilmes();
 
-include './includes/filme_lista.php';
+$bob = new Generos();
+$dadosGeneros = $bob->consultarListaGeneros();
+
+include './includes/filmes_filtro.php';
 include './includes/footer.php';

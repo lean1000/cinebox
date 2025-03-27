@@ -1,11 +1,17 @@
 <?php
 require './classes/Filmes.php';
+
+$titulo = 'Cinebox - Inicio';
 include './includes/header.php';
-$titilo = 'Cinebox - Inicio';
 include './includes/banner.php';
 
+
 $filmes = new Filmes();
-$dadosFilmes = $filmes -> exibirlistaFilmes(8);
+$dadosFilmes = $filmes ->exibirListaFilmes();
+
+
+
 
 include './includes/filmes_lista.php';
+
 include './includes/footer.php';

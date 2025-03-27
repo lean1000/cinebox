@@ -1,6 +1,8 @@
 <?php
+
 require './classes/Filmes.php';
 include './includes/header.php';
+
 
 session_start();
 
@@ -14,7 +16,7 @@ if ( !isset($_SESSION['id_pessoa']) && !empty($_SESSION)){
 }
 
 $filme = new Filmes();
-$resultadoConsultaFilmes = $filme->exibirlistaFilmes();
+$resultadoConsultaFilmes = $filme->exibirListaFilmes();
 
 
 ?>
